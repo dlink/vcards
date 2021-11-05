@@ -1,23 +1,25 @@
 #!/bin/env python
 # -*- coding: utf-8 -*-
 
+import csv
 from random import randint
 
 from vlib.cli import CLI
+from vlib.utils import validate_num_args
 
 class VCardsError(Exception): pass
 
 class VCards():
 
     def __init__(self):
-        self.cards = self.loadCards()
+        #self.cards = self.loadCards()
         self.verbose = 0
 
     def run(self):
         '''Set up Command Line (CLI) commands and options
            launch CLI process
         '''
-        commands =  ['test']
+        commands =  ['run <card_data.csv> [back]']
         options = {}
         self.cli = CLI(self.process, commands, options)
         self.cli.process()
@@ -31,34 +33,22 @@ class VCards():
             self.verbose = 1
 
         args = list(args)
+
         cmd = args.pop(0)
-        if cmd == 'test':
-            return self.test()
+        if cmd == 'run':
+            validate_num_args('run', 1, args)
+            data_filename = args.pop(0)
+            test_side = 'front'
+            if args:
+                test_side = args.pop(0)
+                if test_side != 'back':
+                    raise VCardsError('Unrecognized arg: %s' % test_side)
+            return self.runCards(data_filename, test_side)
 
         raise VCardsError('Unrecognized command: %s' % cmd)
 
-    def loadCards(self):
-        cards = []
-        card1 = Card('English', 'Japanese',
-                     '1', '一')
-        card2 = Card('English', 'Japanese',
-                     '2', '二')
-        card3 = Card('English', 'Japanese',
-                     'What time is it?',
-                     '何時ですか')
-        card4 = Card('English', 'Japanese',
-                     'Where are you going?',
-                     'どこへ行きますか')
-        card5 = Card('English', 'Japanese',
-                     'What is your name?', '名前は')
-        cards.append(card1)
-        cards.append(card2)
-        cards.append(card3)
-        cards.append(card4)
-        cards.append(card5)
-        return cards
-
-    def test(self, test_side='front'):
+    def runCards(self, data_filename, test_side='front'):
+        cards = self.loadCardData(data_filename)
         if test_side == 'front':
             question = 'front'
             answer = 'back'
@@ -70,7 +60,7 @@ class VCards():
 
         n = 0
         correct = 0
-        queue = self.cards
+        queue = cards
         while queue:
             n += 1
 
@@ -110,6 +100,13 @@ class VCards():
             # show score
             print("%sScore: %s/%s" % (ind, correct, n))
             print()
+
+    def loadCardData(self, data_filename):
+        data = []
+        for i, row in enumerate(csv.reader(open(data_filename, 'r'))):
+            card = Card(*row)
+            data.append(card)
+        return data
             
     def printCard(self, n, question):
         nstr = str(n)
@@ -121,10 +118,10 @@ class VCards():
 
 class Card():
 
-    def __init__(self, front_name, back_name, front, back):
+    def __init__(self, front_name, front, back_name, back):
         self.front_name = front_name
-        self.back_name = back_name
         self.front = front
+        self.back_name = back_name
         self.back = back
 
 if __name__ == '__main__':
