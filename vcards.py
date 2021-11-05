@@ -104,6 +104,9 @@ class VCards():
     def loadCardData(self, data_filename):
         data = []
         for i, row in enumerate(csv.reader(open(data_filename, 'r'))):
+            # skip header:
+            if i == 0:
+                continue
             card = Card(*row)
             data.append(card)
         return data
