@@ -3,29 +3,59 @@
 
 from random import randint
 
+from vlib.cli import CLI
+
+class VCardsError(Exception): pass
+
 class VCards():
 
     def __init__(self):
         self.cards = self.loadCards()
+        self.verbose = 0
+
+    def run(self):
+        '''Set up Command Line (CLI) commands and options
+           launch CLI process
+        '''
+        commands =  ['test']
+        options = {}
+        self.cli = CLI(self.process, commands, options)
+        self.cli.process()
+
+    def process(self, *args):
+        '''Process all Incoming Requests
+           Implement a catch all Exceptions
+           Return status of process as a string
+        '''
+        if self.cli.hasoption.get('v'):
+            self.verbose = 1
+
+        args = list(args)
+        cmd = args.pop(0)
+        if cmd == 'test':
+            return self.test()
+
+        raise VCardsError('Unrecognized command: %s' % cmd)
 
     def loadCards(self):
         cards = []
-        card0 = Card('English', 'Japanese',
-                     '1', '一')
-        
-        card01 = Card('English', 'Japanese',
-                     '2', '二')
-        
         card1 = Card('English', 'Japanese',
+                     '1', '一')
+        card2 = Card('English', 'Japanese',
+                     '2', '二')
+        card3 = Card('English', 'Japanese',
                      'What time is it?',
                      '何時ですか')
-        card2 = Card('English', 'Japanese',
+        card4 = Card('English', 'Japanese',
                      'Where are you going?',
-                     'どこに行きますか')
-        cards.append(card0)
-        cards.append(card01)
+                     'どこへ行きますか')
+        card5 = Card('English', 'Japanese',
+                     'What is your name?', '名前は')
         cards.append(card1)
         cards.append(card2)
+        cards.append(card3)
+        cards.append(card4)
+        cards.append(card5)
         return cards
 
     def test(self, test_side='front'):
@@ -98,5 +128,5 @@ class Card():
         self.back = back
 
 if __name__ == '__main__':
-    VCards().test('back')
+    VCards().run()
     
