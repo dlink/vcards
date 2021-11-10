@@ -47,7 +47,7 @@ class VCards():
 
         raise VCardsError('Unrecognized command: %s' % cmd)
 
-    def runCards(self, data_filename, test_side='front'):
+    def runCards(self, data_filename, test_side='front', repeat_errors=1):
         cards = self.loadCardData(data_filename)
         if test_side == 'front':
             question = 'front'
@@ -61,13 +61,15 @@ class VCards():
         n = 0
         correct = 0
         queue = cards
+        repeat = 0
         while queue:
-            n += 1
 
             # get random card from queu
-            card_num = randint(1, len(queue))-1
-            card = queue[card_num]
-            del queue[card_num]
+            if not repeat:
+                card_num = randint(1, len(queue))-1
+                card = queue[card_num]
+                del queue[card_num]
+                n += 1
 
             if test_side == 'front':
                 question = card.front
@@ -92,10 +94,14 @@ class VCards():
 
             # check answer
             if check_guess(guess, answer):
-                correct += 1
                 print(ind + 'Correct')
+                if not repeat:
+                    correct += 1
+                repeat = 0
             else:
                 print(ind + 'Incorrect. %s' % answer)
+                if repeat_errors:
+                    repeat = 1
 
             # show score
             print("%sScore: %s/%s" % (ind, correct, n))
@@ -110,7 +116,7 @@ class VCards():
             card = Card(*row)
             data.append(card)
         return data
-            
+
     def printCard(self, n, question):
         nstr = str(n)
         ind = ' ' * (len(nstr)+2)
@@ -135,4 +141,3 @@ class Card():
 
 if __name__ == '__main__':
     VCards().run()
-    
