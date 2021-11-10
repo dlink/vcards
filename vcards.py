@@ -91,7 +91,7 @@ class VCards():
             print()
 
             # check answer
-            if guess.lower() == answer.lower():
+            if check_guess(guess, answer):
                 correct += 1
                 print(ind + 'Correct')
             else:
@@ -118,6 +118,12 @@ class VCards():
         print('%s  |  %s  |' % (nstr, question))
         print('%s.--%s--.' % (ind, '-'*len(question.encode('utf-8'))))
         return ind
+
+def check_guess(guess, answer):
+    guess2 = guess.lower().\
+        replace('.', '') # remove periods
+    answer2 = answer.lower()
+    return guess2 == answer2
 
 class Card():
 
