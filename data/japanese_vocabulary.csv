@@ -1,0 +1,81 @@
+front_name,front,back_name,back
+e,university,j,大学
+e,high school,j,高校
+e,student,j,学生
+e,college student,j,大学生
+e,international student,j,留学生
+e,teacher,j,先生
+e,... year student,j,〜年生
+e,first year student,j,一年生
+e,am,j,午前
+e,pm,j,午後
+e,... years old,j,〜才
+e,18 years old,j,十八才
+e,telephone,j,電話
+e,number,j,番号
+e,name,j,名前
+e,um,j,あのう
+e,country,j,国
+e,Britain,j,イギレス
+e,Australia,j,オーストラリア
+e,Korea,j,韓国
+e,Canada,j,カナダ
+e,China,j,中国
+e,India,j,インド
+e,Egypt,j,エジプト
+e,Philippiens,j,フィリピン
+e,school major,j,せんこう
+e,asian studies,j,アジアけんちゅう
+e,econooics,j,かいざい
+e,engineering,j,工学
+e,computer,j,コンピューター
+e,politics,j,政治
+e,biology,j,生物学
+e,business,j,ビジネス
+e,literature,j,文学
+e,history,j,歴史
+e,occupation,j,仕事
+e,doctor,j,医者
+e,office worker,j,会社員
+e,nurse,j,かんごし
+e,high school student,j,高校生
+e,housewife,j,しゅふ
+e,graduate student,j,大学生
+e,lawyer,j,べんごし
+e,Family,j,家族
+e,mother,j,お母さん
+e,father,j,お父さん
+e,older sister,j,お姉さん
+e,older brother,j,お兄さん
+e,younger sister,j,妹
+e,younger brother,j,弟
+e,this one,j,これ
+e,that one,j,それ
+e,that one,j,あれ
+e,which one,j,どれ
+e,this …,j,この
+e,that …,j,その
+e,that …,j,あの
+e,which …,j,どの
+e,here,j,ここ
+e,there,j,そこ
+e,over there,j,あそこ
+e,where,j,どこ
+e,who,j,だれ
+e,delicious,j,美味しい
+e,fish,j,魚
+e,port cutlet,j,とんかつ
+e,meat,j,肉
+e,menu,j,メニュー
+e,vegetable,j,野菜
+e,umbrella,j,かさ
+e,bag,j,かばん
+e,shoes,j,くつ
+e,wallet,j,財布
+e,jeans,j,ジーンス
+e,bicycle,j,自転車
+e,newspaper,j,新聞
+e,smartphone,j,スマホ
+e,T-shirt,j,Tシャツ
+e,watch,j,時計
+e,notebook,j,ノート
