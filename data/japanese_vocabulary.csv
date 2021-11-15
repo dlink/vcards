@@ -26,7 +26,7 @@ e,Egypt,j,エジプト
 e,Philippiens,j,フィリピン
 e,school major,j,せんこう
 e,asian studies,j,アジアけんちゅう
-e,econooics,j,かいざい
+e,economoics,j,かいざい
 e,engineering,j,工学
 e,computer,j,コンピューター
 e,politics,j,政治
@@ -40,7 +40,6 @@ e,office worker,j,会社員
 e,nurse,j,かんごし
 e,high school student,j,高校生
 e,housewife,j,しゅふ
-e,graduate student,j,大学生
 e,lawyer,j,べんごし
 e,Family,j,家族
 e,mother,j,お母さん
@@ -51,11 +50,11 @@ e,younger sister,j,妹
 e,younger brother,j,弟
 e,this one,j,これ
 e,that one,j,それ
-e,that one,j,あれ
+e,that one (over there),j,あれ
 e,which one,j,どれ
 e,this …,j,この
 e,that …,j,その
-e,that …,j,あの
+e,that … (over there),j,あの
 e,which …,j,どの
 e,here,j,ここ
 e,there,j,そこ
