@@ -22,7 +22,7 @@ English,Me too,Japanese,わたしも
 English,All right,Japanese,いいです
 English,I don't want any,Japanese,ほしくありません
 English,Could you please,Japanese,お願いします
-English,At what time?,Japanese,何時に？
+English,At what time?,Japanese,何時に
 English,Understood,Japanese,わかりました
 English,What time is it now?,Japanese,今何時ですか
 English,"Listen, please",Japanese,聞いて下さい
@@ -51,23 +51,23 @@ English,"It’s bad weather, isn’t it?",Japanese,嫌なお天気ですね
 English,But I’m not skilled yet,Japanese,でもまだ上手じゃありません
 English,You speak well,Japanese,上手に話します
 English,Is it all right?,Japanese,いいですか
-English,Now?,Japanese,今？
+English,Now?,Japanese,今
 English,Later,Japanese,あとで
-English,Here?,Japanese,ここで？
-English,At the restaurant?,Japanese,レストランで？
+English,Here?,Japanese,ここで
+English,At the restaurant?,Japanese,レストランで
 English,I’m going to drink sake,Japanese,お酒を飲みます
 English,I’m going to drink beer,Japanese,ビールを飲みます
 English,I want sake,Japanese,お酒がほしいです
 English,I don’t want any now,Japanese,今ほしくありません
-English,Or later?,Japanese,それともあとで？
+English,Or later?,Japanese,それともあとで
 English,What time is it?,Japanese,何時ですか
-English,How about tomorrow?,Japanese,明日は？
+English,How about tomorrow?,Japanese,明日は
 English,Tomorrow is a little bit ---,Japanese,明日はちょっと ---
-English,"Then, how about tomorrow evening?",Japanese,じゃあ、明日の晩は？
+English,"Then, how about tomorrow evening?",Japanese,じゃあ、明日の晩は
 English,"In that case, later",Japanese,じゃあ、あとで
 English,Would you like to drink sake too?,Japanese,お酒も飲みますか
 English,I'll give you a few yen,Japanese,円を少し上げます
-English,Where to?,Japanese,どこへ？
+English,Where to?,Japanese,どこへ
 English,I’m leaving,Japanese,行って来ます
 English,For me?,Japanese,わたしに?
 English,For you,Japanese,あなたに
@@ -103,14 +103,14 @@ English,At one o’clock,Japanese,一時に
 English,At two o’clock,Japanese,二時に
 English,At nine o’clock,Japanese,九時に
 English,"At one o’clock, or two o’clock",Japanese,一時か二時に
-English,Or nine o’clock?,Japanese,それとも九時？
+English,Or nine o’clock?,Japanese,それとも九時
 English,Eight o’clock or nine o’clock,Japanese,八時か九時
 English,It’s five o’clock,Japanese,五時です
 English,It’s three o’clock,Japanese,三時です
 English,Nine o’clock is a little bit ---,Japanese,九時はちょっと---
-English,How about eight o’clock?,Japanese,八時は？
+English,How about eight o’clock?,Japanese,八時は
 English,Eight o'clock is a little bit ---,Japanese,八時はちょっと---
-English,Or at four o'clock?,Japanese,それとも４時に？
+English,Or at four o'clock?,Japanese,それとも４時に
 English,At three o’clock I want to drink,Japanese,三時に飲みたいです
 English,I want to eat at ten o’clock,Japanese,十時に食べたいです
 English,Tomorrow evening at seven o’clock,Japanese,明日の晩七時に
@@ -132,12 +132,12 @@ English,It’s over there,Japanese,あそこです
 English,It’s not over there,Japanese,あそこじゃありません
 English,Where is Shinjuku Station?,Japanese,新宿駅はどこですか
 English,Ueno Station is here,Japanese,上野駅はここです
-English,Where at?,Japanese,どこで？
+English,Where at?,Japanese,どこで
 English,Where are you going to eat?,Japanese,どこで食べますか
 English,What are you going to drink?,Japanese,何を飲みますか
 English,What are you going to eat?,Japanese,何を食べますか
 English,What are you going to do?,Japanese,何をしますか
-English,With whom?,Japanese,誰と？
+English,With whom?,Japanese,誰と
 English,With you,Japanese,あなたと
 English,With Mr. Tanaka,Japanese,田中さんと
 English,How many yen do you have?,Japanese,円をいくら持っていますか
@@ -241,7 +241,7 @@ English,The car is here,Japanese,車はここにあります
 English,It’s not small,Japanese,小さくありません
 English,In Japan there are many American cars,Japanese,日本にたくさんアメリカの車があります
 English,Is there gasoline?,Japanese,ガソリンがありますか
-English,How many liters?,Japanese,何リッター？
+English,How many liters?,Japanese,何リッター
 English,How many kilometers are there?,Japanese,何キロありますか
 English,There are sixty kilometers,Japanese,六十キロあります
 English,There are many American cars,Japanese,たくさんアメリカの車があります
@@ -265,7 +265,7 @@ English,Because it's not late yet,Japanese,まだおそくありませんから
 English,I have friends over there,Japanese,あちらに友達がいます
 English,I’m going by car,Japanese,車で行きます
 English,I’m going to see some friends,Japanese,友達に会います
-English,How many days?,Japanese,何日？
+English,How many days?,Japanese,何日
 English,"As for tonight, you can’t buy, for sure",Japanese,今晩は買えませんよ
 English,Are the department stores closed also?,Japanese,デパートも閉まっていますか
 English,I have a few friends in Yokohama,Japanese,横浜に友達が二、三人います
@@ -273,7 +273,7 @@ English,We are going to return to America,Japanese,私たちはアメリカへ�
 English,Are the stores open?,Japanese,お店はあいていますか
 English,What are you going to do over there?,Japanese,あちらで何をしますか
 English,Since when are you here?,Japanese,いつからここにいますか
-English,Since how many days ago?,Japanese,何日前から？
+English,Since how many days ago?,Japanese,何日前から
 English,Since when?,Japanese,いつから
 English,I want to return alone,Japanese,一人で帰りたいです
 English,Since a few days ago,Japanese,二、三日前から
