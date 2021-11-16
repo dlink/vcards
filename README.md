@@ -11,3 +11,17 @@ Syntax:
 Example run:
 
      vcards.py run data/japanese.csv
+
+        .----------------------------------------.
+     1  |  How many days are you going to stay?  |
+        .----------------------------------------.
+        Japanese: 何日いますか
+     
+        Correct
+        Score: 1/1
+     
+        .-----------------------------.
+     2  |  I’m going to have lunch  |
+        .-----------------------------.
+        Japanese: q
+     End Session
