@@ -7,3 +7,7 @@ Syntax:
           back: test the back of the cards
           -v: Verbose
           -q: Quite
+
+Example run:
+
+     vcards.py run data/japanese.csv
