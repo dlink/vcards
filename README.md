@@ -1,6 +1,6 @@
 Simple flash card program, that reads from csv files
 
-Syntax:Cancel changes
+Syntax:
 
      vcards.py [OPTIONS] run <card_data.csv> [back]
      
