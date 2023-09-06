@@ -88,6 +88,7 @@ class VCards():
 
             # break out if nec.
             if guess == 'q':
+                n-=1
                 print('End Session')
                 break
             print()
@@ -106,6 +107,10 @@ class VCards():
             # show score
             print("%sScore: %s/%s" % (ind, correct, n))
             print()
+
+        # show score
+        print("%sScore: %s/%s" % (ind, correct, n))
+        print()
 
     def loadCardData(self, data_filename):
         data = []
@@ -127,7 +132,8 @@ class VCards():
 
 def check_guess(guess, answer):
     guess2 = guess.lower().\
-        replace('.', '') # remove periods
+        replace('.', '').\
+        replace('?', '')
     answer2 = answer.lower()
     return guess2 == answer2
 
