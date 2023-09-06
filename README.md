@@ -1,4 +1,5 @@
 Simple flash card program, that reads from csv files
+Python 3
 
 Syntax:
 
@@ -25,3 +26,8 @@ Example run:
         .-----------------------------.
         Japanese: q
      End Session
+
+Library requirements:
+
+* vlib
+$ export PYTHONPATH=$HOME/vlib/src
